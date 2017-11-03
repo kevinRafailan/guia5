@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_ejercicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bone.guia5.Ejercicio">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cinta"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp" />
+
+    <Button
+        android:id="@+id/IZQ"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/boton"
+        android:text="IZQ"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/centro"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/IZQ"
+        android:layout_alignTop="@+id/IZQ"
+
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/boton"
+        android:text="CENTRO" />
+
+    <Button
+        android:id="@+id/der"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/centro"
+        android:layout_alignTop="@+id/centro"
+        android:layout_toEndOf="@+id/centro"
+        android:layout_toRightOf="@+id/centro"
+        android:background="@drawable/boton"
+        android:text="DER" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/corona"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignEnd="@+id/der" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/corona"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="11dp"
+
+        android:src="@drawable/corona"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4"
+        android:layout_marginEnd="23dp" />
+</RelativeLayout>
